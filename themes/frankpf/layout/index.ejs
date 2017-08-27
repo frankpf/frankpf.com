@@ -1,0 +1,22 @@
+<%- partial('_partials/header') %>
+<%- partial('_partials/hi') %>
+
+<!-- Main content -->
+<section id="posts">
+    <h1>Posts</h1>
+    <ul class="post-index">
+        <% page.posts.each(function(post) { %>
+            <li class="post-link">
+                <a href="<%- config.root %><%- post.path %>">
+                    <%- post.title || 'Untitled' %>
+                </a>
+                <time datetime="<%- post.date.format("YYYY-MM-DD") %>">
+                    <%- post.date.format(config.date_format) %>
+                </time>
+            </li>
+        <% }); %>
+    </ul>
+    <!-- Pagination -->
+    <%- partial('_partials/pagination') %>
+</section>
+</div>

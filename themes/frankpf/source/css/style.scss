@@ -1,0 +1,74 @@
+$primary-color: #1654bf;
+$secondary-color: #12408e;
+$faded-black: #222;
+$black: black;
+
+/* horrible css ahead */
+body {
+    font-family: Georgia, serif;
+    line-height: 1.4;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $faded-black;
+    max-width: 800px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+h1, h2, h3, .post-index, #nav {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: $faded-black;
+}
+
+
+h1 { font-size: 2.8em; color: $black; margin: 0; padding: 0.5em 0 0.5em 0; }
+h2 { font-size: 2em }
+h3 { font-size: 1.4em }
+h4, h5, h6 { font-size: 1em }
+#title { color: $faded-black; font-size: 1.4em; text-transform: uppercase }
+
+a { text-decoration: none; color: $primary-color }
+a:hover { color: $secondary-color; border-bottom: 1px solid }
+
+/* Title */
+#title { padding-bottom: 1em; }
+#title a { text-decoration: none; color: inherit }
+#title a:hover { border-bottom: none }
+
+#about {
+    margin-top: 100px;
+}
+
+.emph {
+    color: black;
+    font-weight: bold;
+}
+
+.mono {
+    font-family: monospace;
+}
+
+.code {
+    padding: 5px;
+    padding-left: 20px;
+    border-left: 1px solid;
+}
+
+
+@media screen and (max-width: 500px) {
+    #header { padding-bottom: 0}
+    #title { text-align: center; float: none; width: 100%; height: 100%; margin: 0; }
+    #nav { float: none; margin: 0; }
+    #nav ul { margin: 0;padding:0; }
+    #nav li { float: none; margin: 0; text-align: center; padding-top: 20px }
+}
+
+/* Posts */
+#posts ul { margin: 0; padding:0 }
+#posts h1 { color: $black; }
+#posts li { list-style: none; padding-bottom: 8px }
+#posts li time { color: #555 }
