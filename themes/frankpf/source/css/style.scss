@@ -48,14 +48,16 @@ a:hover { color: $secondary-color; border-bottom: 1px solid }
     font-weight: bold;
 }
 
-.mono {
-    font-family: monospace;
-}
-
 .code {
     font-family: 'Ubuntu Mono', monospace;
 }
 
+
+/* Posts */
+#posts ul { margin: 0; padding:0 }
+#posts h1 { color: $black; }
+#posts li { list-style: none; padding-bottom: 8px }
+#posts li time { color: #555 }
 
 @media screen and (max-width: 500px) {
     body { margin-left: 0; margin: 0 auto }
@@ -65,9 +67,3 @@ a:hover { color: $secondary-color; border-bottom: 1px solid }
     #nav ul { margin: 0;padding:0; }
     #nav li { float: none; margin: 0; text-align: center; padding-top: 20px }
 }
-
-/* Posts */
-#posts ul { margin: 0; padding:0 }
-#posts h1 { color: $black; }
-#posts li { list-style: none; padding-bottom: 8px }
-#posts li time { color: #555 }
