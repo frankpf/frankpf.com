@@ -19,7 +19,7 @@ body {
     margin-top: 20px;
 }
 
-h1, h2, h3, .post-index, #nav {
+h1, h2, h3 {
     font-family: 'Helvetica Neue', Helvetica, sans-serif;
     color: $faded-black;
 }
@@ -29,29 +29,18 @@ h1 { font-size: 2.8em; color: $black; margin: 0; padding: 0.5em 0 0.5em 0; }
 h2 { font-size: 2em }
 h3 { font-size: 1.4em }
 h4, h5, h6 { font-size: 1em }
-#title { color: $faded-black; font-size: 1.4em; text-transform: uppercase }
 
 a { text-decoration: none; color: $primary-color }
 a:hover { color: $secondary-color; border-bottom: 1px solid }
 
 /* Title */
-#title { padding-bottom: 1em; }
+#title { color: $faded-black; font-size: 1.4em; text-transform: uppercase; padding-bottom: 1em }
 #title a { text-decoration: none; color: inherit }
 #title a:hover { border-bottom: none }
-
-#about {
-    margin-top: 100px;
-}
-
-.emph {
-    color: black;
-    font-weight: bold;
-}
 
 .code {
     font-family: 'Ubuntu Mono', monospace;
 }
-
 
 /* Posts */
 #posts ul { margin: 0; padding:0 }
@@ -62,8 +51,5 @@ a:hover { color: $secondary-color; border-bottom: 1px solid }
 @media screen and (max-width: 500px) {
     body { margin-left: 0; margin: 0 auto }
     #header { padding-bottom: 0}
-    #title { text-align: center; float: none; width: 100%; height: 100%; margin: 0; }
-    #nav { float: none; margin: 0; }
-    #nav ul { margin: 0;padding:0; }
-    #nav li { float: none; margin: 0; text-align: center; padding-top: 20px }
+    #title { text-align: center; width: 100%; height: 100%; margin: 0; }
 }
