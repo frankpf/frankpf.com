@@ -2,3 +2,17 @@
 #+OPTIONS: toc:nil num:nil author:nil date:nil timestamp:nil html-postamble:nil
 #+LAYOUT: post
 
+A _database transaction_ is an atomic group of reads and writes, meaning that it
+either succeeds in its entirety (/commit/) or fails (/abort/ or /rollback/).
+
+Transactions simplify error handling, because the programmer doesn't have to
+deal with *partial failure states*. In the event that hardware crashes,
+application crashes or network interruptions occur, transactions ensure some
+very useful safety guarantees.
+
+#+BEGIN_QUOTE
+Transactions are a way of making ACID operations a general commodity.
+<cite>-- Jim Gray and Andreas Reuter, /Transaction Processing: Concepts and Techniques/ </cite>
+#+END_QUOTE
+
+These guarantees are 
